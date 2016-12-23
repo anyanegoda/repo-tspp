@@ -1,6 +1,6 @@
 uint i;
 …
-if (i.ToString().Length == 1)
+if(i >= 0 && i <= 9)
 {
  ...
 }

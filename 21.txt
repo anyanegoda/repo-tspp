@@ -1,11 +1,6 @@
-txtContacts.Text = "";
-bool first = true;
-
-foreach (string contact in contacts)
+txt = "";
+foreach(string contac in contacts)
 {
-	if (first != true)
-			txtContacts.Text += ";";
-	first = false;
-	
-	txtContacts.Text += contact;
+    txt.Text += contact;
+    txt.Text += ";";
 }

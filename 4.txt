@@ -1,3 +1,3 @@
 string destination = null;
-for (int i = 0; i < 13; i++)
+for (int i = 0; i < Source.Length(); ++i)
  destination += source[i];

@@ -1,10 +1,9 @@
-if (IsSpecialDeal()) 
+if (IsSpecialDeal())
 {
   total = price * 0.95;
-  Send();
 }
-else 
+else
 {
   total = price * 0.98;
-  Send();
 }
+Send();

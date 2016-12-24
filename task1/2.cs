@@ -1,11 +1,8 @@
-void PrintOwing()
+class PizzaDelivery 
 {
-  PrintBanner();
-  PrintDetails(GetOutstanding());
-}
-
-void PrintDetails(double outstanding)
-{
-  Console.WriteLine("name: " + name);
-  Console.WriteLine("amount: " + outstanding);
+  //...
+  int GetRating() 
+  {
+    return numberOfLateDeliveries > 5 ? 2 : 1;
+  }
 }

@@ -1,8 +1,10 @@
 int Discount(int inputVal, int quantity) 
 {
+  int result = inputVal;
+  
   if (inputVal > 50) 
   {
-    inputVal -= 2;
+    result -= 2;
   }
   //...
 }

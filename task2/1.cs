@@ -1,8 +1,8 @@
-if (date < SUMMER_START || date > SUMMER_END) 
+if (NotSummer(date)) 
 {
-  charge = quantity * winterRate + winterServiceCharge;
+  charge = WinterCharge(quantity);
 }
 else 
 {
-  charge = quantity * summerRate;
+  charge = SummerCharge(quantity);
 }

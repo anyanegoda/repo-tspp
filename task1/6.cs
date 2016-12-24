@@ -3,7 +3,7 @@ class Calendar
   // ...
   private List<Appointment> appointments;
 
-  public List<Appointment> FindAppointments(DateTime date)
+  public List<Appointment> FindAppointments(DateTime date, string name)
   {
     List<Appointment> result = new List<Appointment>();
 
@@ -11,7 +11,10 @@ class Calendar
     {
       if (date.Date == item.Date.Date)
       {
-        result.Add(date);
+        if (string.IsNullOrEmpty(name) || name == item.Name)
+        {
+          result.Add(date);
+        }
       }
     }
 
@@ -21,4 +24,4 @@ class Calendar
 
 // Somewhere in client code
 DateTime today = DateTime.Now;
-appointments = calendar.FindAppointments(today);
+appointments = calendar.FindAppointments(today, null);
